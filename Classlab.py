@@ -4,7 +4,7 @@ class Song:
         self.title = title
         self.__length = length
     def play(self):
-        return f"Playing {self.title}..."
+        return f"Playing {self.title}"
     def info(self):
         return f"{self.title} - {self.__length} minutes"
     def __hidden_feature(self):
@@ -20,4 +20,5 @@ print("Has title:", hasattr(s1, "title"))
 print("Has __length:", hasattr(s1, "__length"))
 print("Class name:", s1.__class__.__name__)
 print("Module name:", s1.__class__.__module__)
+
 
